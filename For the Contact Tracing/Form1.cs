@@ -1,10 +1,22 @@
 namespace For_the_Contact_Tracing
 {
-    public partial class Form1 : Form
+    public partial class Firstpage : Form
     {
-        public Form1()
+        public Firstpage()
         {
             InitializeComponent();
+        }
+
+        private void nextpage_Click(object sender, EventArgs e)
+        {
+            Secondpage f2 = new Secondpage();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void exitbttn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -1,0 +1,18 @@
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\For the Contact Tracing.exe
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\For the Contact Tracing.deps.json
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\For the Contact Tracing.runtimeconfig.json
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\For the Contact Tracing.dll
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\For the Contact Tracing.pdb
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.Firstpage.resources
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.Secondpage.resources
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.AssemblyInfo.cs
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.dll
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\refint\For the Contact Tracing.dll
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.pdb
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.genruntimeconfig.cache
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\ref\For the Contact Tracing.dll
