@@ -16,5 +16,10 @@ namespace For_the_Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void Secondpage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
