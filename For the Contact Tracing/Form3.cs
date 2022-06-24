@@ -16,5 +16,25 @@ namespace For_the_Contact_Tracing
         {
             InitializeComponent();
         }
+
+        private void returnbttn_Click(object sender, EventArgs e)
+        {
+            Secondpage f2 = new Secondpage();
+            f2.Show();
+            this.Hide();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            StreamReader test;
+            test = File.OpenText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt");
+            {
+                while (!test.EndOfStream)
+                {
+                    forthelist.Items.Add(test.ReadLine());
+                }
+            }
+            test.Close();
+        }
     }
 }
