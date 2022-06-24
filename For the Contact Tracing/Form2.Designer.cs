@@ -35,22 +35,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.age = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.fulladdress = new System.Windows.Forms.TextBox();
             this.Address = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.Sex1 = new System.Windows.Forms.RadioButton();
             this.Sex2 = new System.Windows.Forms.RadioButton();
+            this.Sex1 = new System.Windows.Forms.RadioButton();
             this.birthdate = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateOfVisit = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.vaccinated2 = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
             this.Vaccinated1 = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.temperaturebox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -59,12 +59,13 @@
             // 
             // Submitbutton
             // 
-            this.Submitbutton.Location = new System.Drawing.Point(289, 451);
+            this.Submitbutton.Location = new System.Drawing.Point(312, 456);
             this.Submitbutton.Name = "Submitbutton";
             this.Submitbutton.Size = new System.Drawing.Size(85, 23);
             this.Submitbutton.TabIndex = 0;
             this.Submitbutton.Text = "Submit";
             this.Submitbutton.UseVisualStyleBackColor = true;
+            this.Submitbutton.Click += new System.EventHandler(this.Submitbutton_Click);
             // 
             // firstname
             // 
@@ -77,7 +78,7 @@
             // 
             this.Surname.Location = new System.Drawing.Point(193, 70);
             this.Surname.Name = "Surname";
-            this.Surname.Size = new System.Drawing.Size(181, 23);
+            this.Surname.Size = new System.Drawing.Size(204, 23);
             this.Surname.TabIndex = 2;
             // 
             // label1
@@ -114,12 +115,12 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Age";
             // 
-            // textBox2
+            // fulladdress
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 195);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(361, 23);
-            this.textBox2.TabIndex = 7;
+            this.fulladdress.Location = new System.Drawing.Point(13, 195);
+            this.fulladdress.Name = "fulladdress";
+            this.fulladdress.Size = new System.Drawing.Size(384, 23);
+            this.fulladdress.TabIndex = 7;
             // 
             // Address
             // 
@@ -150,17 +151,6 @@
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             // 
-            // Sex1
-            // 
-            this.Sex1.AutoSize = true;
-            this.Sex1.Location = new System.Drawing.Point(6, 13);
-            this.Sex1.Name = "Sex1";
-            this.Sex1.Size = new System.Drawing.Size(51, 19);
-            this.Sex1.TabIndex = 0;
-            this.Sex1.TabStop = true;
-            this.Sex1.Text = "Male";
-            this.Sex1.UseVisualStyleBackColor = true;
-            // 
             // Sex2
             // 
             this.Sex2.AutoSize = true;
@@ -171,6 +161,17 @@
             this.Sex2.TabStop = true;
             this.Sex2.Text = "Female";
             this.Sex2.UseVisualStyleBackColor = true;
+            // 
+            // Sex1
+            // 
+            this.Sex1.AutoSize = true;
+            this.Sex1.Location = new System.Drawing.Point(6, 13);
+            this.Sex1.Name = "Sex1";
+            this.Sex1.Size = new System.Drawing.Size(51, 19);
+            this.Sex1.TabIndex = 0;
+            this.Sex1.TabStop = true;
+            this.Sex1.Text = "Male";
+            this.Sex1.UseVisualStyleBackColor = true;
             // 
             // birthdate
             // 
@@ -188,12 +189,12 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Birthdate";
             // 
-            // dateTimePicker1
+            // dateOfVisit
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(13, 403);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 23);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dateOfVisit.Location = new System.Drawing.Point(13, 403);
+            this.dateOfVisit.Name = "dateOfVisit";
+            this.dateOfVisit.Size = new System.Drawing.Size(196, 23);
+            this.dateOfVisit.TabIndex = 13;
             // 
             // label6
             // 
@@ -225,15 +226,6 @@
             this.vaccinated2.Text = "No";
             this.vaccinated2.UseVisualStyleBackColor = true;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 312);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 15);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Vaccinated?";
-            // 
             // Vaccinated1
             // 
             this.Vaccinated1.AutoSize = true;
@@ -245,6 +237,15 @@
             this.Vaccinated1.Text = "Yes";
             this.Vaccinated1.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(13, 312);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 15);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Vaccinated?";
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -254,12 +255,12 @@
             this.label8.TabIndex = 17;
             this.label8.Text = "Temperature";
             // 
-            // textBox1
+            // temperaturebox
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 330);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 23);
-            this.textBox1.TabIndex = 16;
+            this.temperaturebox.Location = new System.Drawing.Point(219, 330);
+            this.temperaturebox.Name = "temperaturebox";
+            this.temperaturebox.Size = new System.Drawing.Size(73, 23);
+            this.temperaturebox.TabIndex = 16;
             // 
             // label9
             // 
@@ -273,7 +274,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(193, 451);
+            this.button1.Location = new System.Drawing.Point(216, 456);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
             this.button1.TabIndex = 19;
@@ -284,20 +285,20 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 491);
+            this.ClientSize = new System.Drawing.Size(409, 491);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.temperaturebox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateOfVisit);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.birthdate);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Address);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.fulladdress);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.age);
             this.Controls.Add(this.label2);
@@ -329,7 +330,7 @@
         private Label label2;
         private TextBox age;
         private Label label3;
-        private TextBox textBox2;
+        private TextBox fulladdress;
         private Label Address;
         private Label label4;
         private GroupBox groupBox1;
@@ -337,14 +338,14 @@
         private RadioButton Sex1;
         private DateTimePicker birthdate;
         private Label label5;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateOfVisit;
         private Label label6;
         private GroupBox groupBox2;
         private RadioButton vaccinated2;
         private RadioButton Vaccinated1;
         private Label label7;
         private Label label8;
-        private TextBox textBox1;
+        private TextBox temperaturebox;
         private Label label9;
         private Button button1;
     }

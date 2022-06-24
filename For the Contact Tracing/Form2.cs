@@ -21,5 +21,48 @@ namespace For_the_Contact_Tracing
         {
 
         }
+
+        private void Submitbutton_Click(object sender, EventArgs e)
+        {
+            //for the sex
+            string SexOption = "";
+            if (Sex1.Checked)
+            {
+                SexOption = Sex1.Text;
+            }
+            if (Sex2.Checked)
+            {
+                SexOption = Sex2.Text;
+            }
+
+            // for the vaccination info
+            string Vaccinated = "";
+            if (Vaccinated1.Checked)
+            {
+                Vaccinated = Vaccinated1.Text;
+            }
+            if (vaccinated2.Checked)
+            {
+                Vaccinated = vaccinated2.Text;
+            }
+
+            //for the array
+            string[] information = {"FULL NAME: " + Surname.Text + ", " + firstname.Text,
+                                    "AGE: "       + age.Text,
+                                    "SEX:" + SexOption,
+                                    "ADDRESS: " + Address.Text,
+                                    "DATE OF BIRTH: " + birthdate,
+                                    "VACCINATED? " + Vaccinated,
+                                    "TEMPERATURE: " + temperaturebox.Text,
+                                    "DATE OF VISIT: " + dateOfVisit.Text};
+            StreamWriter alltheinformation;
+            alltheinformation = File.AppendText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt");
+            foreach (string str in information)
+            {
+                alltheinformation.WriteLine(str);
+            }
+            alltheinformation.Close();
+        }
+
     }
 }
