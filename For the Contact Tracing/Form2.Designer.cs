@@ -52,7 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.temperaturebox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.viewothers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -272,21 +272,22 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Personal Information";
             // 
-            // button1
+            // viewothers
             // 
-            this.button1.Location = new System.Drawing.Point(216, 456);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "View Others";
-            this.button1.UseVisualStyleBackColor = true;
+            this.viewothers.Location = new System.Drawing.Point(216, 456);
+            this.viewothers.Name = "viewothers";
+            this.viewothers.Size = new System.Drawing.Size(89, 23);
+            this.viewothers.TabIndex = 19;
+            this.viewothers.Text = "View Others";
+            this.viewothers.UseVisualStyleBackColor = true;
+            this.viewothers.Click += new System.EventHandler(this.button1_Click);
             // 
             // Secondpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 491);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.viewothers);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.temperaturebox);
@@ -347,6 +348,6 @@
         private Label label8;
         private TextBox temperaturebox;
         private Label label9;
-        private Button button1;
+        private Button viewothers;
     }
 }

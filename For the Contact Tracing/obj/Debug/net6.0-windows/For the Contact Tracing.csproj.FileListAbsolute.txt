@@ -16,3 +16,4 @@ C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Deb
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.pdb
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.genruntimeconfig.cache
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\ref\For the Contact Tracing.dll
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.Listoverview.resources
