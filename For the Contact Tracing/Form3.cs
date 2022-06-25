@@ -26,15 +26,31 @@ namespace For_the_Contact_Tracing
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            StreamReader test;
-            test = File.OpenText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt");
+          
+           
+        }
+
+        private void listView1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void othershower_Click(object sender, EventArgs e)
+        {
+            string viewOthers = @"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt";
+            List<string> compiledList = new List<string>();
+            compiledList = File.ReadAllLines(viewOthers).ToList();
+
+            foreach (string line in compiledList)
             {
-                while (!test.EndOfStream)
-                {
-                    forthelist.Items.Add(test.ReadLine());
-                }
+                listBox1.Items.Add(line);
             }
-            test.Close();
+            File.WriteAllLines(viewOthers, compiledList.ToArray());
+
+            if (othershower.Enabled)
+            {
+                othershower.Enabled = false;
+            }
         }
     }
 }

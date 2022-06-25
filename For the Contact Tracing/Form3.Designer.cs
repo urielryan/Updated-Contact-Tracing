@@ -29,9 +29,8 @@
         private void InitializeComponent()
         {
             this.returnbttn = new System.Windows.Forms.Button();
-            this.forthelist = new System.Windows.Forms.ListView();
-            this.Dateofvisitlist = new System.Windows.Forms.ColumnHeader();
-            this.Namelist = new System.Windows.Forms.ColumnHeader();
+            this.othershower = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // returnbttn
@@ -44,35 +43,32 @@
             this.returnbttn.UseVisualStyleBackColor = true;
             this.returnbttn.Click += new System.EventHandler(this.returnbttn_Click);
             // 
-            // forthelist
+            // othershower
             // 
-            this.forthelist.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Dateofvisitlist,
-            this.Namelist});
-            this.forthelist.Location = new System.Drawing.Point(29, 35);
-            this.forthelist.Name = "forthelist";
-            this.forthelist.Size = new System.Drawing.Size(231, 351);
-            this.forthelist.TabIndex = 1;
-            this.forthelist.UseCompatibleStateImageBehavior = false;
-            this.forthelist.View = System.Windows.Forms.View.Details;
-            this.forthelist.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.othershower.Location = new System.Drawing.Point(389, 430);
+            this.othershower.Name = "othershower";
+            this.othershower.Size = new System.Drawing.Size(119, 23);
+            this.othershower.TabIndex = 2;
+            this.othershower.Text = "View Others";
+            this.othershower.UseVisualStyleBackColor = true;
+            this.othershower.Click += new System.EventHandler(this.othershower_Click);
             // 
-            // Dateofvisitlist
+            // listBox1
             // 
-            this.Dateofvisitlist.Text = "Date of Visit";
-            this.Dateofvisitlist.Width = 100;
-            // 
-            // Namelist
-            // 
-            this.Namelist.Text = "Name";
-            this.Namelist.Width = 120;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(496, 409);
+            this.listBox1.TabIndex = 3;
             // 
             // Listoverview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(295, 464);
-            this.Controls.Add(this.forthelist);
+            this.ClientSize = new System.Drawing.Size(520, 462);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.othershower);
             this.Controls.Add(this.returnbttn);
             this.MaximizeBox = false;
             this.MdiChildrenMinimizedAnchorBottom = false;
@@ -85,8 +81,7 @@
         #endregion
 
         private Button returnbttn;
-        private ListView forthelist;
-        private ColumnHeader Dateofvisitlist;
-        private ColumnHeader Namelist;
+        private Button othershower;
+        private ListBox listBox1;
     }
 }

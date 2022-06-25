@@ -48,9 +48,9 @@ namespace For_the_Contact_Tracing
 
             //for the array
             string[] information = {"FULL NAME: " + Surname.Text + ", " + firstname.Text,
-                                    "AGE: "       + age.Text + "years old",
+                                    "AGE: "       + age.Text + " years old",
                                     "SEX: " + SexOption,
-                                    "ADDRESS: " + Address.Text,
+                                    "ADDRESS: " + fulladdress.Text,
                                     "DATE OF BIRTH: " + birthdate.Text,
                                     "VACCINATED? " + Vaccinated,
                                     "TEMPERATURE: " + temperaturebox.Text,
