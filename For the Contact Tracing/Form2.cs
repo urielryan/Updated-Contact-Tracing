@@ -48,13 +48,13 @@ namespace For_the_Contact_Tracing
 
             //for the array
             string[] information = {"FULL NAME: " + Surname.Text + ", " + firstname.Text,
+                                    "DATE OF VISIT: " + dateOfVisit.Text,
                                     "AGE: "       + age.Text + " years old",
                                     "SEX: " + SexOption,
                                     "ADDRESS: " + fulladdress.Text,
                                     "DATE OF BIRTH: " + birthdate.Text,
                                     "VACCINATED? " + Vaccinated,
                                     "TEMPERATURE: " + temperaturebox.Text,
-                                    "DATE OF VISIT: " + dateOfVisit.Text,
                                     " " };
             StreamWriter alltheinformation;
             alltheinformation = File.AppendText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt");
@@ -63,6 +63,7 @@ namespace For_the_Contact_Tracing
                 alltheinformation.WriteLine(str);
             }
             alltheinformation.Close();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
