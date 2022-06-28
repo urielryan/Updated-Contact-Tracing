@@ -61,11 +61,12 @@ namespace For_the_Contact_Tracing
             foreach (string str in information)
             {
                 alltheinformation.WriteLine(str);
+         
             }
             alltheinformation.Close();
             this.Close();
         }
-
+        //return
         private void button1_Click(object sender, EventArgs e)
         {
             Listoverview f3 = new Listoverview();

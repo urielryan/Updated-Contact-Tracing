@@ -21,7 +21,7 @@ namespace For_the_Contact_Tracing
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -64,5 +64,12 @@ namespace For_the_Contact_Tracing
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            filterform f4 = new filterform();
+            f4.Show();
+            this.Hide();
+        }
     }
 }
