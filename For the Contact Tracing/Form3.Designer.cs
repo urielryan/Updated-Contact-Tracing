@@ -37,9 +37,9 @@
             // 
             // returnbttn
             // 
-            this.returnbttn.Location = new System.Drawing.Point(12, 430);
+            this.returnbttn.Location = new System.Drawing.Point(332, 383);
             this.returnbttn.Name = "returnbttn";
-            this.returnbttn.Size = new System.Drawing.Size(75, 23);
+            this.returnbttn.Size = new System.Drawing.Size(55, 23);
             this.returnbttn.TabIndex = 0;
             this.returnbttn.Text = "Return";
             this.returnbttn.UseVisualStyleBackColor = true;
@@ -47,7 +47,7 @@
             // 
             // othershower
             // 
-            this.othershower.Location = new System.Drawing.Point(332, 27);
+            this.othershower.Location = new System.Drawing.Point(332, 12);
             this.othershower.Name = "othershower";
             this.othershower.Size = new System.Drawing.Size(109, 23);
             this.othershower.TabIndex = 2;
@@ -59,16 +59,16 @@
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(12, 27);
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(312, 394);
             this.listBox1.TabIndex = 3;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(93, 430);
+            this.button1.Location = new System.Drawing.Point(393, 383);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(48, 23);
             this.button1.TabIndex = 5;
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = true;
@@ -76,7 +76,7 @@
             // 
             // bttnforfilter
             // 
-            this.bttnforfilter.Location = new System.Drawing.Point(332, 56);
+            this.bttnforfilter.Location = new System.Drawing.Point(332, 41);
             this.bttnforfilter.Name = "bttnforfilter";
             this.bttnforfilter.Size = new System.Drawing.Size(109, 23);
             this.bttnforfilter.TabIndex = 6;
@@ -89,7 +89,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LemonChiffon;
-            this.ClientSize = new System.Drawing.Size(453, 462);
+            this.ClientSize = new System.Drawing.Size(449, 418);
             this.Controls.Add(this.bttnforfilter);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);

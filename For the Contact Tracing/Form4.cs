@@ -23,5 +23,26 @@ namespace For_the_Contact_Tracing
             f3.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string dateOne = @"D:\Users\HP\Desktop\DATE\Jan 01, 2021 - April 30, 2021";
+            List<string> filterbydate = new List<string>();
+            filterbydate = File.ReadAllLines(dateOne).ToList();
+
+            foreach (string line in filterbydate)
+            {
+                listBoxforfilter.Items.Add(line);
+            }
+            File.WriteAllLines(dateOne, filterbydate.ToArray());
+
+           
+        }
     }
-}
+    }
+
