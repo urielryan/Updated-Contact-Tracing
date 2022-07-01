@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace For_the_Contact_Tracing
 {
-    public partial class filterform : Form
+    public partial class filterForm : Form
     {
-        public filterform()
+        public filterForm()
         {
             InitializeComponent();
         }
@@ -31,17 +31,34 @@ namespace For_the_Contact_Tracing
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string dateOne = @"D:\Users\HP\Desktop\DATE\Jan 01, 2021 - April 30, 2021";
+            listBoxfilter.Items.Clear();
+
+            string dateOne = @"C:\Users\HP\source\repos\For the Contact Tracing\Date\Jan 01, 2021 - April 30, 2021.txt";
             List<string> filterbydate = new List<string>();
             filterbydate = File.ReadAllLines(dateOne).ToList();
 
             foreach (string line in filterbydate)
             {
-                listBoxforfilter.Items.Add(line);
+                listBoxfilter.Items.Add(line);
             }
             File.WriteAllLines(dateOne, filterbydate.ToArray());
 
-           
+        }
+
+        private void date2bttn_Click(object sender, EventArgs e)
+        {
+            listBoxfilter.Items.Clear();
+
+            string dateTwo = @"C:\Users\HP\source\repos\For the Contact Tracing\Date\May 01, 2021 - August 31, 2021.txt";
+            List<string> filterbydate = new List<string>();
+            filterbydate = File.ReadAllLines(dateTwo).ToList();
+
+            foreach (string line in filterbydate)
+            {
+                listBoxfilter.Items.Add(line);
+            }
+            File.WriteAllLines(dateTwo, filterbydate.ToArray());
+
         }
     }
     }

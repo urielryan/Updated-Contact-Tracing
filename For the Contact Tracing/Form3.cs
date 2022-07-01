@@ -47,6 +47,7 @@ namespace For_the_Contact_Tracing
             }
             File.WriteAllLines(viewOthers, compiledList.ToArray());
 
+
             if (othershower.Enabled)
             {
                 othershower.Enabled = false;
@@ -67,7 +68,7 @@ namespace For_the_Contact_Tracing
 
         private void button2_Click(object sender, EventArgs e)
         {
-            filterform f4 = new filterform();
+            filterForm f4 = new filterForm();
             f4.Show();
             this.Hide();
         }
