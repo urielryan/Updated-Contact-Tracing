@@ -83,6 +83,7 @@
             this.date3bttn.TabIndex = 4;
             this.date3bttn.Text = "September to December";
             this.date3bttn.UseVisualStyleBackColor = true;
+            this.date3bttn.Click += new System.EventHandler(this.date3bttn_Click);
             // 
             // date7bttn
             // 
@@ -93,6 +94,7 @@
             this.date7bttn.TabIndex = 9;
             this.date7bttn.Text = "Before 2020";
             this.date7bttn.UseVisualStyleBackColor = true;
+            this.date7bttn.Click += new System.EventHandler(this.date7bttn_Click);
             // 
             // date6bttn
             // 
@@ -103,6 +105,7 @@
             this.date6bttn.TabIndex = 12;
             this.date6bttn.Text = "September to December";
             this.date6bttn.UseVisualStyleBackColor = true;
+            this.date6bttn.Click += new System.EventHandler(this.date6bttn_Click);
             // 
             // date5bttn
             // 
@@ -113,6 +116,7 @@
             this.date5bttn.TabIndex = 11;
             this.date5bttn.Text = "May to August";
             this.date5bttn.UseVisualStyleBackColor = true;
+            this.date5bttn.Click += new System.EventHandler(this.date5bttn_Click);
             // 
             // date4bttn
             // 
@@ -123,6 +127,7 @@
             this.date4bttn.TabIndex = 10;
             this.date4bttn.Text = "January to April";
             this.date4bttn.UseVisualStyleBackColor = true;
+            this.date4bttn.Click += new System.EventHandler(this.date4bttn_Click);
             // 
             // label1
             // 
