@@ -135,6 +135,11 @@ namespace For_the_Contact_Tracing
             }
             File.WriteAllLines(dateSeven, filterbydate.ToArray());
         }
+
+        private void exitbttn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 

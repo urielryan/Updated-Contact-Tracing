@@ -132,9 +132,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(460, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
+            this.label1.Size = new System.Drawing.Size(51, 15);
             this.label1.TabIndex = 13;
             this.label1.Text = "- 2021 -";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -142,9 +143,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(460, 143);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 15);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 14;
             this.label2.Text = "- 2022 -";
             // 
@@ -156,6 +158,7 @@
             this.exitbttn.TabIndex = 15;
             this.exitbttn.Text = "Exit";
             this.exitbttn.UseVisualStyleBackColor = true;
+            this.exitbttn.Click += new System.EventHandler(this.exitbttn_Click);
             // 
             // listBoxfilter
             // 
@@ -170,6 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(563, 293);
             this.Controls.Add(this.listBoxfilter);
             this.Controls.Add(this.exitbttn);
@@ -183,6 +187,7 @@
             this.Controls.Add(this.date2bttn);
             this.Controls.Add(this.date1bttn);
             this.Controls.Add(this.exitbttnform4);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "filterForm";
