@@ -56,6 +56,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.buttonqrpage = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,7 +66,7 @@
             // 
             // Submitbutton
             // 
-            this.Submitbutton.Location = new System.Drawing.Point(312, 456);
+            this.Submitbutton.Location = new System.Drawing.Point(312, 474);
             this.Submitbutton.Name = "Submitbutton";
             this.Submitbutton.Size = new System.Drawing.Size(85, 23);
             this.Submitbutton.TabIndex = 0;
@@ -285,7 +286,7 @@
             // 
             // viewothers
             // 
-            this.viewothers.Location = new System.Drawing.Point(216, 456);
+            this.viewothers.Location = new System.Drawing.Point(217, 474);
             this.viewothers.Name = "viewothers";
             this.viewothers.Size = new System.Drawing.Size(89, 23);
             this.viewothers.TabIndex = 19;
@@ -307,7 +308,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.LemonChiffon;
             this.pictureBox2.Location = new System.Drawing.Point(0, 303);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(411, 188);
+            this.pictureBox2.Size = new System.Drawing.Size(411, 227);
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
             // 
@@ -321,12 +322,23 @@
             this.pictureBox3.TabIndex = 22;
             this.pictureBox3.TabStop = false;
             // 
+            // buttonqrpage
+            // 
+            this.buttonqrpage.Location = new System.Drawing.Point(10, 460);
+            this.buttonqrpage.Name = "buttonqrpage";
+            this.buttonqrpage.Size = new System.Drawing.Size(74, 37);
+            this.buttonqrpage.TabIndex = 23;
+            this.buttonqrpage.Text = "QR Code";
+            this.buttonqrpage.UseVisualStyleBackColor = true;
+            this.buttonqrpage.Click += new System.EventHandler(this.buttonqrpage_Click);
+            // 
             // Secondpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(409, 491);
+            this.ClientSize = new System.Drawing.Size(409, 504);
+            this.Controls.Add(this.buttonqrpage);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.viewothers);
             this.Controls.Add(this.label9);
@@ -398,5 +410,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private Button buttonqrpage;
     }
 }

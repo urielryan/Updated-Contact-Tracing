@@ -19,3 +19,6 @@ C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Deb
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.Listoverview.resources
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.Properties.Resources.resources
 C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.filterform.resources
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For_the_Contact_Tracing.AutoFillFormPage.resources
+C:\Users\HP\source\repos\For the Contact Tracing\For the Contact Tracing\obj\Debug\net6.0-windows\For the Contact Tracing.csproj.CopyComplete

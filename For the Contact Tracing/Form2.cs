@@ -73,5 +73,12 @@ namespace For_the_Contact_Tracing
             f3.Show();
             this.Hide();
         }
+
+        private void buttonqrpage_Click(object sender, EventArgs e)
+        {
+            AutoFillFormPage f5 = new AutoFillFormPage();
+            f5.Show();
+            this.Hide();
+        }
     }
 }
