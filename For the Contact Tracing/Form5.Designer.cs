@@ -39,17 +39,17 @@
             this.fullNametxtbox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxaddress = new System.Windows.Forms.TextBox();
+            this.agebox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateofbirth = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.datevisited = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxtemp = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Sex2 = new System.Windows.Forms.RadioButton();
             this.Sex1 = new System.Windows.Forms.RadioButton();
@@ -58,6 +58,7 @@
             this.vaccinated2 = new System.Windows.Forms.RadioButton();
             this.Vaccinated1 = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxqrcode)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -137,9 +138,11 @@
             // pictureBoxqrcode
             // 
             this.pictureBoxqrcode.BackColor = System.Drawing.Color.White;
+            this.pictureBoxqrcode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBoxqrcode.Location = new System.Drawing.Point(98, 478);
             this.pictureBoxqrcode.Name = "pictureBoxqrcode";
             this.pictureBoxqrcode.Size = new System.Drawing.Size(193, 188);
+            this.pictureBoxqrcode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxqrcode.TabIndex = 7;
             this.pictureBoxqrcode.TabStop = false;
             // 
@@ -173,19 +176,19 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "STEP 2:";
             // 
-            // textBox2
+            // textBoxaddress
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 163);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(319, 23);
-            this.textBox2.TabIndex = 11;
+            this.textBoxaddress.Location = new System.Drawing.Point(39, 163);
+            this.textBoxaddress.Name = "textBoxaddress";
+            this.textBoxaddress.Size = new System.Drawing.Size(319, 23);
+            this.textBoxaddress.TabIndex = 11;
             // 
-            // textBox5
+            // agebox
             // 
-            this.textBox5.Location = new System.Drawing.Point(280, 263);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 23);
-            this.textBox5.TabIndex = 14;
+            this.agebox.Location = new System.Drawing.Point(280, 263);
+            this.agebox.Name = "agebox";
+            this.agebox.Size = new System.Drawing.Size(78, 23);
+            this.agebox.TabIndex = 14;
             // 
             // label8
             // 
@@ -207,12 +210,12 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Full address";
             // 
-            // dateTimePicker1
+            // dateofbirth
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(39, 216);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(319, 23);
-            this.dateTimePicker1.TabIndex = 18;
+            this.dateofbirth.Location = new System.Drawing.Point(39, 216);
+            this.dateofbirth.Name = "dateofbirth";
+            this.dateofbirth.Size = new System.Drawing.Size(319, 23);
+            this.dateofbirth.TabIndex = 18;
             // 
             // label10
             // 
@@ -234,12 +237,12 @@
             this.label11.TabIndex = 20;
             this.label11.Text = "Age";
             // 
-            // dateTimePicker2
+            // datevisited
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(154, 349);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(202, 23);
-            this.dateTimePicker2.TabIndex = 21;
+            this.datevisited.Location = new System.Drawing.Point(154, 349);
+            this.datevisited.Name = "datevisited";
+            this.datevisited.Size = new System.Drawing.Size(202, 23);
+            this.datevisited.TabIndex = 21;
             // 
             // label12
             // 
@@ -261,12 +264,12 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "Temperature";
             // 
-            // textBox3
+            // textBoxtemp
             // 
-            this.textBox3.Location = new System.Drawing.Point(37, 350);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(67, 23);
-            this.textBox3.TabIndex = 23;
+            this.textBoxtemp.Location = new System.Drawing.Point(37, 350);
+            this.textBoxtemp.Name = "textBoxtemp";
+            this.textBoxtemp.Size = new System.Drawing.Size(67, 23);
+            this.textBoxtemp.TabIndex = 23;
             // 
             // groupBox1
             // 
@@ -358,27 +361,36 @@
             this.label15.TabIndex = 26;
             this.label15.Text = "Vaccinated?";
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(467, 349);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(100, 96);
+            this.richTextBox1.TabIndex = 28;
+            this.richTextBox1.Text = "";
+            // 
             // AutoFillFormPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(775, 673);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxtemp);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.datevisited);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateofbirth);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.agebox);
+            this.Controls.Add(this.textBoxaddress);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.fullNametxtbox);
@@ -420,17 +432,17 @@
         private TextBox fullNametxtbox;
         private Label label6;
         private Label label7;
-        private TextBox textBox2;
-        private TextBox textBox5;
+        private TextBox textBoxaddress;
+        private TextBox agebox;
         private Label label8;
         private Label label9;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dateofbirth;
         private Label label10;
         private Label label11;
-        private DateTimePicker dateTimePicker2;
+        private DateTimePicker datevisited;
         private Label label12;
         private Label label13;
-        private TextBox textBox3;
+        private TextBox textBoxtemp;
         private GroupBox groupBox1;
         private RadioButton Sex2;
         private Label label14;
@@ -439,5 +451,6 @@
         private RadioButton vaccinated2;
         private RadioButton Vaccinated1;
         private Label label15;
+        private RichTextBox richTextBox1;
     }
 }
