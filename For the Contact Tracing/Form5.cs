@@ -8,6 +8,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
+using ZXing.Common;
+using ZXing.Rendering;
+using ZXing.QrCode;
+
 
 namespace For_the_Contact_Tracing
 {
@@ -17,6 +24,9 @@ namespace For_the_Contact_Tracing
         {
             InitializeComponent();
         }
+
+        FilterInfoCollection filterInfoCollection;
+        VideoCaptureDevice captureDevice;
 
         private void label3_Click(object sender, EventArgs e)
         {
@@ -47,19 +57,70 @@ namespace For_the_Contact_Tracing
                 Vaccinated = vaccinated2.Text;
             }
 
-            var qrcodeall = "NAME: " + fullNametxtbox.Text + "\n"
-                + "DATE OF VISIT: " + datevisited.Text + "\n"
-                + "AGE: " + agebox.Text + "\n"
-                + "SEX: " + SexOption + "\n"
-                + "ADDRESS: " + textBoxaddress.Text + "\n"
-                + "VACCINATED? " + Vaccinated + "\n"
-                + "TEMPERATURE: " + textBoxtemp.Text + "\n"
-                + "";
+            string qrcodeall = fullNametxtbox.Text + "\n"
+                + "" + "\n"
+                + datevisited.Text + "\n"
+                + "" + "\n"
+                + agebox.Text + "\n"
+                + "" + "\n"
+                + SexOption + "\n"
+                + "" + "\n"
+                + textBoxaddress.Text + "\n"
+                + "" + "\n"
+                + Vaccinated + "\n"
+                + "" + "\n"
+                + textBoxtemp.Text + "\n";
+               
 
             QRCodeGenerator qr = new QRCodeGenerator();
             QRCodeData data = qr.CreateQrCode(qrcodeall, QRCodeGenerator.ECCLevel.Q);
             QRCode code = new QRCode(data);
             pictureBoxqrcode.Image = code.GetGraphic(7);
+
+        }
+
+        private void AutoFillFormPage_Load(object sender, EventArgs e)
+        {
+            filterInfoCollection = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach(FilterInfo filterInfo in filterInfoCollection)
+                cameraDevice.Items.Add(filterInfo.Name);
+            cameraDevice.SelectedIndex = 0;
+        }
+
+        private void bttncameraopen_Click(object sender, EventArgs e)
+        {
+            captureDevice = new VideoCaptureDevice(filterInfoCollection[cameraDevice.SelectedIndex].MonikerString);
+            captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+            timer1.Start();
+        }
+
+        private void CaptureDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            pictureBox2.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void AutoFillFormPage_FormClosing(object sender, FormClosingEventArgs e)
+        {
+          
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (pictureBox2.Image != null)
+            {
+                ZXing.Windows.Compatibility.BarcodeReader barcodeReader = new
+                ZXing.Windows.Compatibility.BarcodeReader();
+
+                Result result = barcodeReader.Decode((Bitmap)pictureBox2.Image);
+                if(result != null)
+                {
+                    txtQRcodeshower.Text = result.ToString();
+                    timer1.Stop();
+                  
+                }
+
+            }
 
         }
     }

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.components = new System.ComponentModel.Container();
             this.buttongenerator = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,21 +58,39 @@
             this.vaccinated2 = new System.Windows.Forms.RadioButton();
             this.Vaccinated1 = new System.Windows.Forms.RadioButton();
             this.label15 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtQRcodeshower = new System.Windows.Forms.RichTextBox();
+            this.cameraDevice = new System.Windows.Forms.ComboBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.bttncameraopen = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxqrcode)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.pictureBox1.Location = new System.Drawing.Point(404, -9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(397, 688);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // buttongenerator
             // 
@@ -361,21 +379,238 @@
             this.label15.TabIndex = 26;
             this.label15.Text = "Vaccinated?";
             // 
-            // richTextBox1
+            // txtQRcodeshower
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(467, 349);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(100, 96);
-            this.richTextBox1.TabIndex = 28;
-            this.richTextBox1.Text = "";
+            this.txtQRcodeshower.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtQRcodeshower.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtQRcodeshower.Location = new System.Drawing.Point(523, 449);
+            this.txtQRcodeshower.Name = "txtQRcodeshower";
+            this.txtQRcodeshower.ReadOnly = true;
+            this.txtQRcodeshower.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedHorizontal;
+            this.txtQRcodeshower.Size = new System.Drawing.Size(164, 217);
+            this.txtQRcodeshower.TabIndex = 28;
+            this.txtQRcodeshower.Text = "";
+            // 
+            // cameraDevice
+            // 
+            this.cameraDevice.FormattingEnabled = true;
+            this.cameraDevice.Location = new System.Drawing.Point(501, 81);
+            this.cameraDevice.Name = "cameraDevice";
+            this.cameraDevice.Size = new System.Drawing.Size(232, 23);
+            this.cameraDevice.TabIndex = 29;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label16.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label16.Location = new System.Drawing.Point(447, 84);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(48, 15);
+            this.label16.TabIndex = 30;
+            this.label16.Text = "Camera:";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Location = new System.Drawing.Point(447, 158);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(286, 269);
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
+            // bttncameraopen
+            // 
+            this.bttncameraopen.BackColor = System.Drawing.Color.Transparent;
+            this.bttncameraopen.Location = new System.Drawing.Point(676, 121);
+            this.bttncameraopen.Name = "bttncameraopen";
+            this.bttncameraopen.Size = new System.Drawing.Size(57, 23);
+            this.bttncameraopen.TabIndex = 32;
+            this.bttncameraopen.UseVisualStyleBackColor = false;
+            this.bttncameraopen.Click += new System.EventHandler(this.bttncameraopen_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label17.Font = new System.Drawing.Font("Arial Unicode MS", 6.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(672, 109);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(61, 12);
+            this.label17.TabIndex = 33;
+            this.label17.Text = "Open camera";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox1.Location = new System.Drawing.Point(406, -2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(376, 698);
+            this.pictureBox1.TabIndex = 34;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label18.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(425, 451);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(98, 15);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "Complete name:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label19.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(464, 577);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(59, 15);
+            this.label19.TabIndex = 36;
+            this.label19.Text = "Address:";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label21.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(489, 544);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(33, 15);
+            this.label21.TabIndex = 38;
+            this.label21.Text = "Sex:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label22.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(490, 516);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(33, 15);
+            this.label22.TabIndex = 39;
+            this.label22.Text = "Age:";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label23.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(441, 640);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(84, 15);
+            this.label23.TabIndex = 40;
+            this.label23.Text = "Temperature:";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label24.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(443, 486);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(80, 15);
+            this.label24.TabIndex = 41;
+            this.label24.Text = "Date visited:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.label25.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(447, 609);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 15);
+            this.label25.TabIndex = 42;
+            this.label25.Text = "Vaccinated?";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox3.Location = new System.Drawing.Point(511, 473);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox3.TabIndex = 43;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox4.Location = new System.Drawing.Point(511, 504);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox4.TabIndex = 44;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox5.Location = new System.Drawing.Point(511, 534);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox5.TabIndex = 45;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox6.Location = new System.Drawing.Point(511, 562);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox6.TabIndex = 46;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox7.Location = new System.Drawing.Point(511, 595);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox7.TabIndex = 47;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.pictureBox8.Location = new System.Drawing.Point(511, 627);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(192, 10);
+            this.pictureBox8.TabIndex = 48;
+            this.pictureBox8.TabStop = false;
             // 
             // AutoFillFormPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.ClientSize = new System.Drawing.Size(775, 673);
-            this.Controls.Add(this.richTextBox1);
+            this.ClientSize = new System.Drawing.Size(775, 691);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.bttncameraopen);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.cameraDevice);
+            this.Controls.Add(this.txtQRcodeshower);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
@@ -408,20 +643,27 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "  ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AutoFillFormPage_FormClosing);
+            this.Load += new System.EventHandler(this.AutoFillFormPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxqrcode)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Button buttongenerator;
         private Label label1;
         private Label label2;
@@ -451,6 +693,26 @@
         private RadioButton vaccinated2;
         private RadioButton Vaccinated1;
         private Label label15;
-        private RichTextBox richTextBox1;
+        private RichTextBox txtQRcodeshower;
+        private ComboBox cameraDevice;
+        private Label label16;
+        private PictureBox pictureBox2;
+        private Button bttncameraopen;
+        private Label label17;
+        private System.Windows.Forms.Timer timer1;
+        private PictureBox pictureBox1;
+        private Label label18;
+        private Label label19;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
     }
 }
