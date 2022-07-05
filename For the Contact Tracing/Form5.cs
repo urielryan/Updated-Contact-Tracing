@@ -123,5 +123,13 @@ namespace For_the_Contact_Tracing
             }
 
         }
+
+        private void buttonforsubmit_Click(object sender, EventArgs e)
+        {
+            StreamWriter qrdone = File.AppendText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing TXT FILE.txt");
+            qrdone.Write(txtQRcodeshower.Text);
+            qrdone.Close();
+            this.Close();
+        }
     }
 }

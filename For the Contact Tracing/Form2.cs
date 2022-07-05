@@ -57,7 +57,7 @@ namespace For_the_Contact_Tracing
                                     "TEMPERATURE: " + temperaturebox.Text,
                                     " " };
             StreamWriter alltheinformation;
-            alltheinformation = File.AppendText(@"D:\Users\HP\Desktop\Contact Tracing.txt");
+            alltheinformation = File.AppendText(@"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing TXT FILE.txt");
             foreach (string str in information)
             {
                 alltheinformation.WriteLine(str);

@@ -1,0 +1,73 @@
+FULL NAME: Reyles, Uriel Ryan
+DATE OF VISIT: Tuesday, May 31, 2022
+AGE: 19 years old
+SEX: Male
+ADDRESS: Full Address
+DATE OF BIRTH: 10/12/2002
+VACCINATED? Yes
+TEMPERATURE: 78.23
+
+FULL NAME: Dalangin, Kate Anne Marie
+DATE OF VISIT: Sunday, June 5, 2022
+AGE: 20 years old
+SEX: Female
+ADDRESS: Full Address
+DATE OF BIRTH: Friday, July 6, 2001
+VACCINATED? No
+TEMPERATURE: 36.8
+ 
+FULL NAME: Geronimo, Sarah
+DATE OF VISIT: Tuesday, July 21, 2021
+AGE: 29 years old
+SEX: Female
+ADDRESS: Full Address
+DATE OF BIRTH: Tuesday, April 12, 1994
+VACCINATED? Yes
+TEMPERATURE: 35.2
+
+FULL NAME: Rizal, Annaliza
+DATE OF VISIT: Tuesday, July 11, 2017
+AGE: 27 years old
+SEX: Female
+ADDRESS: Full Address
+DATE OF BIRTH: Wednesday, July 3, 1985
+VACCINATED? No
+TEMPERATURE: 36.1
+
+ 
+FULL NAME: Panuga, James Reid
+DATE OF VISIT: Monday, April 20, 2021
+AGE: 32 years old
+SEX: Male
+ADDRESS: Good Harvest Ville, Zabarte
+DATE OF BIRTH: Friday, June 11, 1999
+VACCINATED? Yes
+TEMPERATURE: 23
+ 
+FULL NAME: Baker, Hannah
+DATE OF VISIT: Sunday, March 28, 2021
+AGE: 20 years old
+SEX: Female
+ADDRESS: Bagumbong, Caloocan
+DATE OF BIRTH: Wednesday, May 18, 2016
+VACCINATED? Yes
+TEMPERATURE: 36
+ 
+FULL NAME: Kim, Lady R
+DATE OF VISIT: Tuesday, June 28, 2022
+AGE: 23 years old
+SEX: Female
+ADDRESS: Havana Forest, Part
+DATE OF BIRTH: Thursday, November 20, 1997
+VACCINATED? Yes
+TEMPERATURE: 23
+ 
+FULL NAME: Cabanos, Anthony
+DATE OF VISIT: Tuesday, May 10, 2022
+AGE: 18 years old
+SEX: Male
+ADDRESS: Bulacan, Dimagiba
+DATE OF BIRTH: Thursday, May 1, 2003
+VACCINATED? Yes
+TEMPERATURE: 34
+ 

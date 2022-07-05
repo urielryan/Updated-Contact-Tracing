@@ -44,6 +44,7 @@
             // 
             // exitbttnform4
             // 
+            this.exitbttnform4.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exitbttnform4.Location = new System.Drawing.Point(12, 12);
             this.exitbttnform4.Name = "exitbttnform4";
             this.exitbttnform4.Size = new System.Drawing.Size(50, 23);
@@ -54,7 +55,7 @@
             // 
             // date1bttn
             // 
-            this.date1bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date1bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date1bttn.Location = new System.Drawing.Point(411, 59);
             this.date1bttn.Name = "date1bttn";
             this.date1bttn.Size = new System.Drawing.Size(145, 23);
@@ -65,7 +66,7 @@
             // 
             // date2bttn
             // 
-            this.date2bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date2bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date2bttn.Location = new System.Drawing.Point(411, 88);
             this.date2bttn.Name = "date2bttn";
             this.date2bttn.Size = new System.Drawing.Size(145, 23);
@@ -76,7 +77,7 @@
             // 
             // date3bttn
             // 
-            this.date3bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date3bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date3bttn.Location = new System.Drawing.Point(411, 117);
             this.date3bttn.Name = "date3bttn";
             this.date3bttn.Size = new System.Drawing.Size(145, 23);
@@ -87,7 +88,7 @@
             // 
             // date7bttn
             // 
-            this.date7bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date7bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date7bttn.Location = new System.Drawing.Point(478, 264);
             this.date7bttn.Name = "date7bttn";
             this.date7bttn.Size = new System.Drawing.Size(78, 23);
@@ -98,7 +99,7 @@
             // 
             // date6bttn
             // 
-            this.date6bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date6bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date6bttn.Location = new System.Drawing.Point(411, 219);
             this.date6bttn.Name = "date6bttn";
             this.date6bttn.Size = new System.Drawing.Size(145, 23);
@@ -109,7 +110,7 @@
             // 
             // date5bttn
             // 
-            this.date5bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date5bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date5bttn.Location = new System.Drawing.Point(411, 190);
             this.date5bttn.Name = "date5bttn";
             this.date5bttn.Size = new System.Drawing.Size(145, 23);
@@ -120,7 +121,7 @@
             // 
             // date4bttn
             // 
-            this.date4bttn.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.date4bttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.date4bttn.Location = new System.Drawing.Point(411, 161);
             this.date4bttn.Name = "date4bttn";
             this.date4bttn.Size = new System.Drawing.Size(145, 23);
@@ -152,6 +153,7 @@
             // 
             // exitbttn
             // 
+            this.exitbttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.exitbttn.Location = new System.Drawing.Point(68, 12);
             this.exitbttn.Name = "exitbttn";
             this.exitbttn.Size = new System.Drawing.Size(34, 23);
@@ -162,8 +164,9 @@
             // 
             // listBoxfilter
             // 
+            this.listBoxfilter.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBoxfilter.FormattingEnabled = true;
-            this.listBoxfilter.ItemHeight = 15;
+            this.listBoxfilter.ItemHeight = 16;
             this.listBoxfilter.Location = new System.Drawing.Point(12, 41);
             this.listBoxfilter.Name = "listBoxfilter";
             this.listBoxfilter.Size = new System.Drawing.Size(393, 244);

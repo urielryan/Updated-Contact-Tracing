@@ -37,7 +37,7 @@ namespace For_the_Contact_Tracing
 
         private void othershower_Click(object sender, EventArgs e)
         {
-            string viewOthers = @"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing.txt";
+            string viewOthers = @"D:\Users\HP\Desktop\Contact Tracing\Contact Tracing TXT FILE.txt";
             List<string> compiledList = new List<string>();
             compiledList = File.ReadAllLines(viewOthers).ToList();
 
@@ -71,6 +71,11 @@ namespace For_the_Contact_Tracing
             filterForm f4 = new filterForm();
             f4.Show();
             this.Hide();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

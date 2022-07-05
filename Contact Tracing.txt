@@ -1,0 +1,27 @@
+FULL NAME: asd, asd
+DATE OF VISIT: Tuesday, July 5, 2022
+AGE: asd years old
+SEX: Male
+ADDRESS: asd
+DATE OF BIRTH: Tuesday, July 5, 2022
+VACCINATED? Yes
+TEMPERATURE: asd
+ 
+FULL NAME: d, d
+DATE OF VISIT: Tuesday, July 5, 2022
+AGE: d years old
+SEX: Male
+ADDRESS: d
+DATE OF BIRTH: Tuesday, July 5, 2022
+VACCINATED? Yes
+TEMPERATURE: d
+ 
+FULL NAME: TEST, TEST
+DATE OF VISIT: Tuesday, July 5, 2022
+AGE: AS years old
+SEX: Male
+ADDRESS: ASD
+DATE OF BIRTH: Thursday, July 7, 2022
+VACCINATED? Yes
+TEMPERATURE: AD
+ 

@@ -79,6 +79,7 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.buttonforsubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxqrcode)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -586,12 +587,24 @@
             this.pictureBox8.TabIndex = 48;
             this.pictureBox8.TabStop = false;
             // 
+            // buttonforsubmit
+            // 
+            this.buttonforsubmit.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonforsubmit.Location = new System.Drawing.Point(709, 656);
+            this.buttonforsubmit.Name = "buttonforsubmit";
+            this.buttonforsubmit.Size = new System.Drawing.Size(54, 23);
+            this.buttonforsubmit.TabIndex = 49;
+            this.buttonforsubmit.Text = "Submit";
+            this.buttonforsubmit.UseVisualStyleBackColor = true;
+            this.buttonforsubmit.Click += new System.EventHandler(this.buttonforsubmit_Click);
+            // 
             // AutoFillFormPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(775, 691);
+            this.Controls.Add(this.buttonforsubmit);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
@@ -714,5 +727,6 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private Button buttonforsubmit;
     }
 }

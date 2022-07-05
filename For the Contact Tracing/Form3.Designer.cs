@@ -37,6 +37,7 @@
             // 
             // returnbttn
             // 
+            this.returnbttn.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.returnbttn.Location = new System.Drawing.Point(332, 383);
             this.returnbttn.Name = "returnbttn";
             this.returnbttn.Size = new System.Drawing.Size(55, 23);
@@ -47,6 +48,7 @@
             // 
             // othershower
             // 
+            this.othershower.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.othershower.Location = new System.Drawing.Point(332, 12);
             this.othershower.Name = "othershower";
             this.othershower.Size = new System.Drawing.Size(109, 23);
@@ -57,15 +59,18 @@
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Arial Unicode MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 15;
+            this.listBox1.ItemHeight = 16;
             this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(312, 394);
+            this.listBox1.Size = new System.Drawing.Size(312, 388);
             this.listBox1.TabIndex = 3;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(393, 383);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(48, 23);
@@ -76,6 +81,7 @@
             // 
             // bttnforfilter
             // 
+            this.bttnforfilter.Font = new System.Drawing.Font("Arial Unicode MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.bttnforfilter.Location = new System.Drawing.Point(332, 41);
             this.bttnforfilter.Name = "bttnforfilter";
             this.bttnforfilter.Size = new System.Drawing.Size(109, 23);
